@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_200"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:layout_margin="20dp"
+                    android:background="@drawable/baackground"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/headerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Enter Service Details"
+                    android:textColor="#3F51B5"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="23dp" />
+
+                <!-- Service Category Spinner -->
+                <Spinner
+                    android:id="@+id/serviceCategorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_txt"
+                    android:spinnerMode="dropdown" />
+
+                <!-- Tuition Type Spinner -->
+                <Spinner
+                    android:id="@+id/tuitionTypeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_txt"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColorHint="#606060"
+                    android:inputType="text"
+                    android:hint="Tutor Name" />
+
+                <EditText
+                    android:id="@+id/phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:padding="20dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="14sp"
+                    android:textColorHint="#606060"
+                    android:minLines="3"
+                    android:inputType="number"
+                    android:hint="Mobile Number" />
+
+                <EditText
+                    android:id="@+id/adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_question_answer_24"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:padding="20dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="14sp"
+                    android:textColorHint="#606060"
+                    android:minLines="3"
+                    android:inputType="text"
+                    android:hint="Valid Address" />
+
+                <EditText
+                    android:id="@+id/desText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_question_answer_24"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:padding="20dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="14sp"
+                    android:textColorHint="#606060"
+                    android:minLines="3"
+                    android:inputType="text"
+                    android:hint="Description" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button_choose_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:background="@color/colorPrimary"
+                        android:text="Choose Advertisment" />
+                    <ImageView
+                        android:id="@+id/chosenImageView"
+                        android:layout_width="180dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="180dp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:layout_height="52dp" />
+
+                <Button
+                    android:id="@+id/uploadBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Upload" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

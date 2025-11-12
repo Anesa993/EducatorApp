@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">EducatorApp</string>
+    <string name="drawer_open">opn</string>
+    <string name="drawer_close">close</string>
+    <string-array name="tutor_types_array">
+        <item>Quraan Teacher</item>
+        <item>Tutor</item>
+        <item>Cooking Skills</item>
+        <item>Skills developers</item>
+        <item>Special needs Educator</item>
+        <item>Language instructors</item>
+    </string-array>
+    <string-array name="service_categories">
+        <item>Tutor</item>
+        <item>Quran Teacher</item>
+        <item>Cooking Teacher</item>
+        <item>Skills developers</item>
+        <item>Special needs Educator</item>
+        <item>Language instructors</item>
+    </string-array>
+
+    <string-array name="tuition_types">
+        <item>Home</item>
+        <item>Online</item>
+        <item>Both</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>

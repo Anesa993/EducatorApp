@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_txt"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:ellipsize="end"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:maxLines="1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/mobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/create_password"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                android:ellipsize="end"
+                android:hint="(5555)-5555555"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:background="@drawable/bg_txt"
+                android:drawablePadding="10dp"
+                android:padding="15dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:background="@drawable/bg_txt"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:ellipsize="end"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/nunito_semibold"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:maxLines="1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_txt"
+                android:padding="15dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_txt"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:ellipsize="end"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:fontFamily="@font/nunito_semibold"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student"
+                    android:checked="false"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Educator"
+                    android:checked="false"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="18dp" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/signupBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/pass_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_btn_solid"
+                android:text="Sign Up"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/registrationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Registration..."
+                android:textColor="#FFF"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+package com.app.fyp.educatorapp.Model;
+
+public class RequestObjectAccept {
+    private String userId;
+    private String serviceId;
+    private String status;
+    private String userName;
+    private String userPhone;
+    private String userAddress;
+    private String usertime;
+
+    public String getTutorMobile() {
+        return tutorMobile;
+    }
+
+    public void setTutorMobile(String tutorMobile) {
+        this.tutorMobile = tutorMobile;
+    }
+
+    private String tutorMobile;
+
+    public String getTutorName() {
+        return tutorName;
+    }
+
+    public void setTutorName(String tutorName) {
+        this.tutorName = tutorName;
+    }
+
+    private String tutorName;
+
+    public String getUsertime() {
+        return usertime;
+    }
+
+    public void setUsertime(String usertime) {
+        this.usertime = usertime;
+    }
+
+    public String getUsertype() {
+        return usertype;
+    }
+
+    public void setUsertype(String usertype) {
+        this.usertype = usertype;
+    }
+
+    private String usertype;
+
+
+    public RequestObjectAccept() {
+        // Default constructor
+    }
+
+
+    public RequestObjectAccept(String userId, String serviceId, String status, String userName, String userPhone, String userAddress, String usertime, String usertype ,String tutorMobile,String tutorName) {
+        this.userId = userId;
+        this.serviceId = serviceId;
+        this.status = status;
+        this.userName = userName;
+        this.userPhone = userPhone;
+        this.userAddress = userAddress;
+        this.usertime = usertime;
+        this.usertype = usertype;
+        this.tutorMobile = tutorMobile;
+        this.tutorName = tutorName;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getServiceId() {
+        return serviceId;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getUserPhone() {
+        return userPhone;
+    }
+
+    public String getUserAddress() {
+        return userAddress;
+    }
+}
